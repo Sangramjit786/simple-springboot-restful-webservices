@@ -48,6 +48,16 @@ This ensures:
 
 This prevents repetitive error handling logic and ensures **clear communication of errors** to API clients.
 
+**Example:**
+```json
+{
+  "timestamp": "2025-08-19T10:00:00",
+  "status": 404,
+  "error": "Not Found",
+  "message": "User with ID 10 not found",
+  "path": "/api/v1/users/10"
+}
+
 ---
 
 ### 3. Validation of REST API Requests
