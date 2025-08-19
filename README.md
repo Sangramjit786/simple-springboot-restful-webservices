@@ -6,6 +6,74 @@ This repository ([simple-springboot-restful-webservices](https://github.com/Sang
 
 The project emphasizes the use of **DTO patterns, object mapping frameworks, centralized exception handling, validation, monitoring, and API documentation**.
 
+---
+
+## Project Overview
+
+The project provides a REST API backend showcasing how to build **scalable and clean web services** in Spring Boot.  
+
+It covers the following:
+- DTO (Data Transfer Object) implementation for decoupling layers.  
+- Object mapping using **ModelMapper** and **MapStruct**.  
+- Comprehensive **exception handling** (custom + global).  
+- **Validation** of REST API requests with customized error messages.  
+- Production-ready monitoring with **Spring Boot Actuator**.  
+- API documentation with **SpringDoc OpenAPI** and Swagger UI.
+
+---
+
+## Key Features
+
+### 1. DTO Pattern with ModelMapper and MapStruct
+- Implemented the **DTO (Data Transfer Object)** pattern to separate domain models from external representations.  
+- Used **ModelMapper** for quick and dynamic object conversions.  
+- Used **MapStruct** for **compile-time, type-safe, and efficient mappings**.  
+
+This ensures:
+- A clean separation between **API layer** and **domain models**.  
+- **Performance optimization** using MapStruct’s code generation.  
+- Easy maintainability and scalability when DTOs evolve separately from entities.
+
+---
+
+### 2. Exception Handling (Custom + Global)
+- Created **custom exception classes** for business-specific errors (e.g., `UserNotFoundException`).  
+- Used a **global exception handler** with `@ControllerAdvice` and `@ExceptionHandler` to centralize error handling.  
+- Returned **consistent JSON error responses** across all controllers.  
+
+This prevents repetitive error handling logic and ensures **clear communication of errors** to API clients.
+
+---
+
+### 3. Validation of REST API Requests
+- Applied **validation annotations** (`@NotNull`, `@Size`, `@Email`, etc.) in DTO classes.  
+- Implemented **custom validation messages** to provide meaningful feedback to clients.  
+- Designed a **customized error response format** for validation errors, improving usability.  
+
+This makes the APIs **robust, user-friendly, and self-explanatory** for clients.
+
+---
+
+### 4. Spring Boot Actuator Integration
+- Enabled **Spring Boot Actuator** to monitor and manage the application in production.  
+- Provided endpoints like:
+  - `/actuator/health` – Application health status.  
+  - `/actuator/info` – Custom application information.  
+- Useful for **DevOps teams** to monitor service status and performance.
+
+---
+
+### 5. API Documentation with SpringDoc OpenAPI (Swagger UI)
+- Integrated **SpringDoc OpenAPI** to automatically generate API documentation.  
+- Swagger UI provides:
+  - **Interactive API exploration**.  
+  - Ability to **test endpoints directly** from the browser.  
+- Enhanced with **annotations** (`@Operation`, `@ApiResponse`, etc.) for clarity and usability.  
+
+This ensures developers and API consumers can easily **understand and test the REST APIs**.
+
+---
+
 ## ✨ Features
 
 - **RESTful API Endpoints** for CRUD operations on User resources
