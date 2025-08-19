@@ -57,6 +57,7 @@ This prevents repetitive error handling logic and ensures **clear communication 
 - This ensures clients receive clear, actionable error messages.
 
 This makes the APIs **robust, user-friendly, and self-explanatory** for clients.
+
 **Example:**
 ```json
 {
