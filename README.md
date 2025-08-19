@@ -25,9 +25,14 @@ It covers the following:
 ## Key Features
 
 ### 1. DTO Pattern with ModelMapper and MapStruct
-- Implemented the **DTO (Data Transfer Object)** pattern to separate domain models from external representations.  
-- Used **ModelMapper** for quick and dynamic object conversions.  
-- Used **MapStruct** for **compile-time, type-safe, and efficient mappings**.  
+- Implemented the **DTO (Data Transfer Object)** pattern to separate domain models from external representations.
+- Implemented the **Data Transfer Object (DTO) pattern** to separate internal domain models from exposed API responses and requests.  
+- Ensures **data encapsulation**, prevents leaking domain logic, and provides flexibility in shaping API responses.
+
+#### Object Mapping with ModelMapper and MapStruct
+- **ModelMapper**: Used for **runtime object mapping**, allowing quick conversion between entities and DTOs.  
+- **MapStruct**: Added as a **compile-time code generator** for high-performance and type-safe mappings.  
+- This dual implementation highlights **two common mapping strategies** in modern Spring Boot applications.
 
 This ensures:
 - A clean separation between **API layer** and **domain models**.  
