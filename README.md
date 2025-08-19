@@ -2,6 +2,10 @@
 
 A production-ready RESTful web service built with Spring Boot that demonstrates best practices in API development, including DTO pattern implementation, comprehensive exception handling, request validation, and API documentation.
 
+This repository ([simple-springboot-restful-webservices](https://github.com/Sangramjit786/simple-springboot-restful-webservices.git)) contains a **Spring Boot-based REST API project** that demonstrates best practices for building structured, maintainable, and production-ready web services.  
+
+The project emphasizes the use of **DTO patterns, object mapping frameworks, centralized exception handling, validation, monitoring, and API documentation**.
+
 ## ✨ Features
 
 - **RESTful API Endpoints** for CRUD operations on User resources
