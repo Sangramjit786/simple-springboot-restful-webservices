@@ -44,7 +44,7 @@ This ensures:
 ### 2. Exception Handling (Custom + Global)
 - Created **custom exception classes** for business-specific errors (e.g., `UserNotFoundException`).  
 - Used a **global exception handler** with `@ControllerAdvice` and `@ExceptionHandler` to centralize error handling.  
-- Returned **consistent JSON error responses** across all controllers.  
+- Returned **consistent JSON error responses** across all controllers.
 
 This prevents repetitive error handling logic and ensures **clear communication of errors** to API clients.
 
@@ -53,9 +53,19 @@ This prevents repetitive error handling logic and ensures **clear communication 
 ### 3. Validation of REST API Requests
 - Applied **validation annotations** (`@NotNull`, `@Size`, `@Email`, etc.) in DTO classes.  
 - Implemented **custom validation messages** to provide meaningful feedback to clients.  
-- Designed a **customized error response format** for validation errors, improving usability.  
+- Designed a **customized error response format** for validation errors, improving usability.
+- This ensures clients receive clear, actionable error messages.
 
 This makes the APIs **robust, user-friendly, and self-explanatory** for clients.
+**Example:**
+```json
+{
+  "errors": [
+    { "field": "email", "message": "must be a valid email address" },
+    { "field": "name", "message": "must not be empty" }
+  ]
+}
+```
 
 ---
 
