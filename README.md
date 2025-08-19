@@ -63,7 +63,8 @@ This makes the APIs **robust, user-friendly, and self-explanatory** for clients.
 - Enabled **Spring Boot Actuator** to monitor and manage the application in production.  
 - Provided endpoints like:
   - `/actuator/health` – Application health status.  
-  - `/actuator/info` – Custom application information.  
+  - `/actuator/info` – Custom application information.
+  - `/actuator/metrics` → Application metrics
 - Useful for **DevOps teams** to monitor service status and performance.
 
 ---
