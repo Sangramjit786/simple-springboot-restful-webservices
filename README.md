@@ -213,6 +213,16 @@ The project demonstrates two approaches to DTO mapping:
 1. **ModelMapper** - For runtime object mapping
 2. **MapStruct** - For compile-time object mapping with better performance
 
+## Learning Outcomes
+
+By working with this project, developers will learn:
+
+- How to implement DTOs with ModelMapper and MapStruct.
+- How to handle exceptions consistently and globally in Spring Boot.
+- How to validate requests and return structured error responses.
+- How to integrate Spring Boot Actuator for production monitoring.
+- How to generate interactive API docs with SpringDoc OpenAPI.
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
