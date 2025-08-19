@@ -73,8 +73,16 @@ This makes the APIs **robust, user-friendly, and self-explanatory** for clients.
 - Swagger UI provides:
   - **Interactive API exploration**.  
   - Ability to **test endpoints directly** from the browser.  
-- Enhanced with **annotations** (`@Operation`, `@ApiResponse`, etc.) for clarity and usability.  
-
+- Enhanced with **annotations** (`@Operation`, `@ApiResponse`, etc.) for clarity and usability.
+- Customized documentation with annotations such as:
+  - @Operation for endpoint descriptions
+  - @ApiResponse for response codes
+  - @Parameter for input details
+    
+**Swagger UI available at:**
+```bash
+http://localhost:8080/swagger-ui.html
+```
 This ensures developers and API consumers can easily **understand and test the REST APIs**.
 
 ---
