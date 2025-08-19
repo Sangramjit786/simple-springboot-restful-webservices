@@ -57,7 +57,7 @@ This prevents repetitive error handling logic and ensures **clear communication 
   "message": "User with ID 10 not found",
   "path": "/api/v1/users/10"
 }
-
+```
 ---
 
 ### 3. Validation of REST API Requests
